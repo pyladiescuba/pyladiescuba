@@ -37,6 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # My App's
+    'accounts',
+    'contact',
+    'core',
+    'feed',
+    'pages',
+    'services',
+    'social',
+
+
+    # Others App's
     'crispy_forms',
 ]
 
@@ -115,10 +125,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    "pyladiescuba/pyladiescuba/static/",
-]
+STATIC_ROOT = os.path.join(os.path.join(BASE_DIR, 'staticfiles'))
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'pyladiescuba/static/')
+]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
