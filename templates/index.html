@@ -9,23 +9,148 @@
     <link rel="stylesheet" href="{% static "vendor/bootstrap/css/bootstrap.css" %}">
     <link rel="shortcut icon" href="{% static "img/pyladies.jpg" %}" type="image/x-icon">
     <link rel="stylesheet" href=" {% static "css/pyladiestyle.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=" {% static "vendor/fontawesome/css/fontawesome.css" %}">
     <link rel="stylesheet" href=" {% static "vendor/fontawesome/css/v4-shims.css" %}">
 
-    <title>Pyladies Cuba Website</title>
+    <title>Grupo de Pyladies en Cuba Website</title>
 </head>
-<body>
-
+<body class="hidden">
+<header>
+    <nav id="nav">
+        <div class="contenedor nav">
+            <div class="logo"></div>
+            <div class="link" id="link">
+                <a href="#" id="link-inicio" class="btn-header">Inicio</a>
+                <a href="#" id="link-blog" class="btn-header">Blog</a>
+                <a href="#" id="link-talleres" class="btn-header">Talleres</a>
+                <a href="#" id="link-eventos" class="btn-header">Eventos</a>
+                <a href="#" id="link-contactos" class="btn-header">Contactos</a>
+            </div>
+            <div class="icono" id="open">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </nav>
+    <div class="textos">
+        <h1><strong>Pyladies Cuba</strong></h1>
+        <p>Grupo de chicas aficionadas a las tecnologias.</p>
+    </div>
+</header>
+<main>
+    <section class="contenedor team" id="equipo">
+        <h3><strong>Nuestro equipo</strong></h3>
+        <p class="after">Conoce a este equipo de gente creativa y amantes de la programacion</p>
+        <div class="card">
+            <div class="content-card">
+                <div class="people">
+                    <img src="{% static "img/undraw_working_remotely_jh40.png" %}" alt="img-card">
+                </div>
+                <div class="texto-team">
+                    <h4><strong>Remotely</strong></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate eum facilis
+                        ipsum, maiores nobis non numquam.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="people">
+                    <img src="{% static "img/member_249017581.jpeg" %}" alt="img-card">
+                </div>
+                <div class="texto-team">
+                    <h4><strong>Remotely</strong></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate eum facilis
+                        ipsum, maiores nobis non numquam.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <div class="people">
+                    <img src="{% static "img/pyladies.jpg" %}" alt="img-card">
+                </div>
+                <div class="texto-team">
+                    <h4><strong>Remotely</strong></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate eum facilis
+                        ipsum, maiores nobis non numquam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="servicio">
+        <div class="contenedor servicio">
+            <h3>Nuestros Servicios</h3>
+            <p class="after">Siempre mejorando y creando oportunidades para todos.</p>
+            <div class="caja-servicio">
+                <img src="../pyladiescuba/static/vendor/pure/img/common/andrew-avatar.png" alt="">
+                <h4>Creativos y Asombrosos</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="caja-servicio">
+                <img src="../pyladiescuba/static/vendor/pure/img/common/andrew-avatar.png" alt="">
+                <h4>Creativos y Asombrosos</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="caja-servicio">
+                <img src="../pyladiescuba/static/vendor/pure/img/common/andrew-avatar.png" alt="">
+                <h4>Creativos y Asombrosos</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor taller" id="talleres">
+        <h3> Nuestros Talleres</h3>
+        <p class="after">Hacemos de algo simple algo extraordinario.</p>
+        <div class="botones-taller">
+            <ul>
+                <li class="filter active" data-nombre="todos">Todos</li>
+                <li class="filter" data-nombre="diseno">Diseno</li>
+                <li class="filter" data-nombre="programacion">Programacion</li>
+                <li class="filter" data-nombre="marketing">Marketing</li>
+            </ul>
+        </div>
+        <div class="galeria-taller">
+            <div class="cont-taller programacion">
+                <div class="img-taller">
+                    <img src="{% static "img/undraw_Designer_girl_s028.png" %}" alt="">
+                </div>
+                <div class="texto-taller">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                </div>
+            </div>
+            <div class="cont-taller diseno">
+                <div class="img-taller">
+                    <img src="{% static "img/undraw_modern_professional_yt9h.svg" %}" alt="">
+                </div>
+                <div class="texto-taller">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                </div>
+            </div>
+            <div class="cont-taller marketing">
+                <div class="img-taller">
+                    <img src="{% static "img/DkB_mF1VsAAHoGO.jpg" %}" alt="">
+                </div>
+                <div class="texto-taller">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <section class="footer-social" id="footer-social">
-        <i class="fas fa-github fa-3x"></i>
-        <i class="fas fa-facebook fa-3x"></i>
-        <i class="fas fa-telegram fa-3x"></i>
-        <i class="fas fa-twitter fa-3x"></i>
+    <section class="footer-social" id="contacto">
+        <div class="contenedor footer">
+            <div class="marca-logo">
+                <img src="{% static "img/pyladies.jpg" %}" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fas fa-github fa-3x"></i>
+                <i class="fas fa-facebook fa-3x"></i>
+                <i class="fas fa-telegram fa-3x"></i>
+                <i class="fas fa-twitter fa-3x"></i>
+            </div>
+        </div>
     </section>
 </footer>
 </body>
-<script src="{% static "../static/vendor/bootstrap/js/bootstrap.js" %}"></script>
-<script src="{% static "../static/vendor/fontawesome/js/fontawesome.min.js" %}"></script>
+<script src="{% static "vendor/bootstrap/js/bootstrap.js" %}"></script>
+<script src="{% static "vendor/fontawesome/js/fontawesome.min.js" %}"></script>
 </html>
