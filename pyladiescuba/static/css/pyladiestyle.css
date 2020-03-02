@@ -1,16 +1,39 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'fontello';
+    display: flex;
+    flex-direction: column;
 }
 
-nav {
-    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
     display: flex;
-    justify-content: space-evenly;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #d09693 0%, #EF2755 100%);;
+    
+}
 
+contenedor{
+    align-items: self-end;
+}
+
+.logo {
+    alignment: left;
+}
+
+.link {
+    align-items: end;
+}
+
+.textos {
+    align-items: flex-end;
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static "vendor/bootstrap/css/bootstrap.css" %}">
     <link rel="shortcut icon" href="{% static "img/pyladies.jpg" %}" type="image/x-icon">
     <link rel="stylesheet" href=" {% static "css/pyladiestyle.css" %}">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    {#    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">#}
     <link rel="stylesheet" href=" {% static "vendor/fontawesome/css/fontawesome.css" %}">
     <link rel="stylesheet" href=" {% static "vendor/fontawesome/css/v4-shims.css" %}">
 
@@ -17,28 +17,31 @@
 </head>
 <body class="hidden">
 <header>
-    <nav id="nav">
-        <div class="contenedor nav">
-            <div class="logo"></div>
-            <div class="link" id="link">
-                <a href="#" id="link-inicio" class="btn-header">Inicio</a>
-                <a href="#" id="link-blog" class="btn-header">Blog</a>
-                <a href="#" id="link-talleres" class="btn-header">Talleres</a>
-                <a href="#" id="link-eventos" class="btn-header">Eventos</a>
-                <a href="#" id="link-contactos" class="btn-header">Contactos</a>
-            </div>
+    <nav>
+        <a href="#" id="link-inicio" class="btn-header">Inicio</a>
+        <a href="#" id="link-blog" class="btn-header">Blog</a>
+        <a href="#" id="link-talleres" class="btn-header">Talleres</a>
+        <a href="#" id="link-eventos" class="btn-header">Eventos</a>
+        <a href="#" id="link-contactos" class="btn-header">Contactos</a>
+        <section class="contenedor">
             <div class="icono" id="open">
                 <span>&#9776;</span>
             </div>
-        </div>
+        </section>
     </nav>
-    <div class="textos">
+    <section class="texto-header">
         <h1><strong>Pyladies Cuba</strong></h1>
         <p>Grupo de chicas aficionadas a las tecnologias.</p>
+    </section>
+    <div class="wave" style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.82 C151.52,157.61 336.63,-62.26 500.00,49.82 L500.00,149.50 L0.00,149.50 Z"
+                  style="stroke: none; fill: #08f;"></path>
+        </svg>
     </div>
 </header>
 <main>
-    <section class="contenedor team" id="equipo">
+    <section class="contenedor-team" id="equipo">
         <h3><strong>Nuestro equipo</strong></h3>
         <p class="after">Conoce a este equipo de gente creativa y amantes de la programacion</p>
         <div class="card">
@@ -139,6 +142,7 @@
     <section class="footer-social" id="contacto">
         <div class="contenedor footer">
             <div class="marca-logo">
+                <h2>Donde puedes encontrarnos</h2>
                 <img src="{% static "img/pyladies.jpg" %}" alt="">
             </div>
             <div class="iconos">
