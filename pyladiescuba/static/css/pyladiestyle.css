@@ -26,11 +26,140 @@ body {
 header {
     width: 100%;
     height: 600px;
-    background: #bc4e9c; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EC2953, #bc4e9c); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EC2953, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ec2953; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(255, 4, 50, 0.67), rgba(188, 3, 150, 0.62)), url(../img/photo-of-women-using-laptops-3178744.jpg); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(255, 4, 50, 0.57), rgba(188, 78, 156, 0.716)), url(../img/photo-of-women-using-laptops-3178744.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
-.imagen-card {
-    width: 250px;
+nav {
+    text-align: right;
+    padding: 20px 40px 0 0;
+}
+
+nav > a {
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover {
+    text-decoration: transparent;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header .texto-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texto-header > h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.texto-header > p {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+/*Nuestro equipo*/
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-sobre-nosotros > h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contenedor-sobre-nosotros > p {
+    font-size: 16px;
+}
+
+.contenedor-sobre-nosotros > img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagen {
+    width: 24%;
+    margin-bottom: 10px;
+}
+
+.contenedor-imagen > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contenedor .card-body{
+    border: 0;
+}
+
+.taller > .card-title {
+    color: #EC2953;
+    text-align: center;
+    font-size: 20px;
+}
+
+.taller > .after {
+    text-align: center;
+    text-decoration: none;
+}
+
+.contenedor-encuentranos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.encuentranos{
+    align-items: center;
+    width: 600px;
+}
+
+/* FOOTER */
+footer{
+    padding-top: 0px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+.marca-logo{
+    align-items: self-start;
+    width: 24%;
+    height: 24%;
+    justify-content: left;
+}
+.footer > iconos{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    align-content: center;
+
 }
