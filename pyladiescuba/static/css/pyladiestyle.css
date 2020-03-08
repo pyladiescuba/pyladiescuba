@@ -132,10 +132,8 @@ header .texto-header {
 }
 
 .contenedor-encuentranos {
-    width: 100%;
-    height: 100%;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 
@@ -143,7 +141,6 @@ header .texto-header {
 
 .encuentranos{
     align-items: center;
-    width: 600px;
 }
 
 /* FOOTER */
