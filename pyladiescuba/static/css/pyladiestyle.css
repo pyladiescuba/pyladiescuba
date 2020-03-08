@@ -19,7 +19,7 @@ body {
     color: #EC2953;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 12px;
 }
 
 /* HEADER */
@@ -27,8 +27,8 @@ header {
     width: 100%;
     height: 600px;
     background: #ec2953; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(255, 4, 50, 0.67), rgba(188, 3, 150, 0.62)), url(../img/photo-of-women-using-laptops-3178744.jpg); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(255, 4, 50, 0.57), rgba(188, 78, 156, 0.716)), url(../img/photo-of-women-using-laptops-3178744.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, rgba(255, 4, 50, 0.167), rgba(188, 3, 150, 0.162)), url(../img/women-using-laptop-3277806.jpg); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(255, 4, 50, 0.840), rgba(188, 78, 156, 0.680)), url(../img/women-using-laptop-3277806.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -83,6 +83,7 @@ header .texto-header {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .contenedor-sobre-nosotros > h3 {
@@ -91,7 +92,7 @@ header .texto-header {
 }
 
 .contenedor-sobre-nosotros > p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .contenedor-sobre-nosotros > img {
@@ -115,6 +116,10 @@ header .texto-header {
 .contenedor .card-body{
     border: 0;
 }
+.taller{
+    padding-top: 20px;
+    font-size: 20px;
+}
 
 .taller > .card-title {
     color: #EC2953;
@@ -122,9 +127,8 @@ header .texto-header {
     font-size: 20px;
 }
 
-.taller > .after {
+.after {
     text-align: center;
-    text-decoration: none;
 }
 
 .contenedor-encuentranos {
@@ -144,22 +148,31 @@ header .texto-header {
 
 /* FOOTER */
 footer{
-    padding-top: 0px 0 0 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-
-}
-.marca-logo{
-    align-items: self-start;
-    width: 24%;
-    height: 24%;
-    justify-content: left;
-}
-.footer > iconos{
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    align-content: center;
-
+  color: #ffffff;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  .links{
+    ul {list-style-type: lower-latin;}
+    li a{
+      color: #ffffff;
+      transition: color .2s; a:hover{
+        text-decoration:transparent;
+        color:#CCCCCC;
+        }
+    }
+  }
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color: rgb(204, 204, 204)
+       }
+    }
+  }
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
 }
