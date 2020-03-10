@@ -144,32 +144,40 @@ header .texto-header {
 }
 
 /* FOOTER */
-footer{
-  color: #ffffff;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  .links{
-    ul {list-style-type: lower-latin;}
-    li a{
-      color: #ffffff;
-      transition: color .2s; a:hover{
-        text-decoration:transparent;
-        color:#CCCCCC;
-        }
-    }
-  }
-  .about-company{
-    i{font-size: 25px;}
-    a{
-      color:white;
-      transition: color .2s;
-      &:hover{color: rgb(204, 204, 204)
-       }
-    }
-  }
-  .location{
-    i{font-size: 18px;}
-  }
-  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+footer {
+    color: #ffffff;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.links > ul{
+    list-style-type: none;
+}
+.links li > a {
+    color: #ffffff;
+    transition: color .2s;
+}
+.links a:hover {
+    text-decoration: transparent;
+    color: #CCCCCC;
+}
+
+.about-company i{
+    font-size: 30px;
+}
+.about-company a {
+    color: white;
+    transition: color .2s;
+}
+.about-company a:hover{
+    color: rgb(204, 204, 204)
+}
+
+.location i{
+    font-size: 18px;
+}
+
+.copyright p{
+    border-top:1px solid rgba(255,255,255,.1);
 }
