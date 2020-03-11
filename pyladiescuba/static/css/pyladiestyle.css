@@ -1,39 +1,183 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'fontello';
-    display: flex;
-    flex-direction: column;
 }
 
-contenedor{
+.contenedor {
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
-    display: flex;
     margin: auto;
-    flex-direction: row;
-    justify-content: center;
+}
+
+.titulo {
+    color: #EC2953;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 600px;
+    background: #ec2953; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(255, 4, 50, 0.167), rgba(188, 3, 150, 0.162)), url(../img/women-using-laptop-3277806.jpg); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(255, 4, 50, 0.840), rgba(188, 78, 156, 0.680)), url(../img/women-using-laptop-3277806.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 20px 40px 0 0;
+}
+
+nav > a {
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover {
+    text-decoration: transparent;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header .texto-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
     align-items: center;
-    background-image: linear-gradient(to top, #d09693 0%, #EF2755 100%);;
-    
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-contenedor{
-    align-items: self-end;
+.texto-header > h1 {
+    font-size: 50px;
+    color: #ffffff;
 }
 
-.logo {
-    alignment: left;
+.texto-header > p {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
 }
 
-.link {
-    align-items: end;
+/*Nuestro equipo*/
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
-.textos {
-    align-items: flex-end;
+.contenedor-sobre-nosotros > h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contenedor-sobre-nosotros > p {
+    font-size: 20px;
+}
+
+.contenedor-sobre-nosotros > img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagen {
+    width: 24%;
+    margin-bottom: 10px;
+}
+
+.contenedor-imagen > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contenedor .card-body{
+    border: 0;
+}
+.taller{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.taller > .card-title {
+    color: #EC2953;
+    text-align: center;
+    font-size: 20px;
+}
+
+.after {
+    text-align: center;
+}
+
+.contenedor-encuentranos {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.encuentranos{
+    align-items: center;
+}
+
+/* FOOTER */
+footer {
+    color: #ffffff;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.links > ul{
+    list-style-type: none;
+}
+.links li > a {
+    color: #ffffff;
+    transition: color .2s;
+}
+.links a:hover {
+    text-decoration: transparent;
+    color: #CCCCCC;
+}
+
+.about-company i{
+    font-size: 30px;
+}
+.about-company a {
+    color: white;
+    transition: color .2s;
+}
+.about-company a:hover{
+    color: rgb(204, 204, 204)
+}
+
+.location i{
+    font-size: 18px;
+}
+
+.copyright p{
+    border-top:1px solid rgba(255,255,255,.1);
 }
